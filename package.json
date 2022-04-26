@@ -6,15 +6,47 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn lint:fix && yarn format && yarn build && git add -A ."
+    }
+  },
+  "lint-staged": {
+    "*.+(js|jsx)": "eslint --fix",
+    "*.+(json|css|md)": "prettier --write"
   },
   "dependencies": {
+    "@chakra-ui/react": "^1.8.8",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "axios": "^0.26.1",
+    "formik": "^2.2.9",
+    "framer-motion": "^6",
+    "immer": "^9.0.12",
     "next": "12.1.4",
+    "nookies": "^2.5.2",
+    "prop-types": "^15.8.1",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "react-query": "^3.34.16",
+    "yup": "^0.32.11",
+    "zustand": "^3.7.1"
   },
   "devDependencies": {
-    "eslint": "8.13.0",
-    "eslint-config-next": "12.1.4"
+    "autoprefixer": "^10.4.4",
+    "eslint": "8.11.0",
+    "eslint-config-next": "12.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "4",
+    "lint-staged": "^12.3.7",
+    "postcss": "^8.4.12",
+    "prettier": "^2.6.0",
+    "tailwindcss": "^3.0.23"
   }
 }
