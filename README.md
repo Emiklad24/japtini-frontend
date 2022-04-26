@@ -1,6 +1,6 @@
-# Consultant Management System Front-End
+# Japtini E-commerce Front-End
 
-The Web Frontend for the consultant management system
+The Web Frontend for the Japtini front-end
 
 ## Project Code Libraries
 
