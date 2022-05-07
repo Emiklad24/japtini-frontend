@@ -292,7 +292,7 @@ const categories = () => {
               <a href className="text-gray-400 font-light">
                 Grain
               </a>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              <a href="{{ route('product.show', $topdeal->id) ">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
               </a>
               <div className="font-bold text-lg">₦5000.00</div>

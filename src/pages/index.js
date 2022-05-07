@@ -21,3 +21,10 @@ export default function Home() {
     </>
   );
 }
+
+/*"husky": {
+      "hooks": {
+        "pre-commit": "lint-staged",
+        "pre-push": "yarn lint:fix && yarn format && yarn build && git add -A ."
+      }
+    },}*/
