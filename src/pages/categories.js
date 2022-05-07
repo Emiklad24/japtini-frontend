@@ -1,7 +1,7 @@
 import React from "react";
 import cornPix from "@assets/images/products/corn.png";
 import Image from "next/image";
-import imagePix from "@assets/images/products/image.png";
+import imagePix from "@assets/images/products/Image.png";
 import Link from "next/link";
 
 const categories = () => {
