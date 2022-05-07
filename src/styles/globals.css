@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.buy-button {
+  background: -webkit-linear-gradient(
+      rgba(255, 255, 255, 1),
+      rgba(0, 0, 0, 0) 0%
+    ),
+    -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 1)
+          0%);
+}

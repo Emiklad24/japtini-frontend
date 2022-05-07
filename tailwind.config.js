@@ -37,6 +37,19 @@ module.exports = {
           "primary-700": "#6200ea",
           "primary-900": "#1c0352",
         },
+        jp: {
+          "gray-100": "#A0A19C",
+          "gray-200": "#EFEFEE",
+          "gray-300": "#BCBDB9",
+          "gray-plus": "#2C2C2C",
+          "gray-min": "#A7A7A7",
+          "gray-light": "#d5d4d45c",
+          "gray-finese": "##C5C5C5",
+          "purple-100": "#5463FF",
+          "black-100": "#40413B",
+          "black-200": "#383933",
+          "green-100": "#029241",
+        },
       },
       spacing: {
         7: "1.75rem",
@@ -57,6 +70,18 @@ module.exports = {
       },
       boxShadow: {
         outline: "0 0 0 3px rgba(101, 31, 255, 0.4)",
+      },
+
+      borderWidth: {
+        half: "0.5px",
+      },
+      backgroundImage: {
+        select:
+          "background: transparent url(/img/) no-repeat right 1.2rem center/.8rem 4rem;",
+      },
+      lineHeight: {
+        "extra-loose": "2.5",
+        12: "3rem",
       },
     },
   },
