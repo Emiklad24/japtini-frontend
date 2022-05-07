@@ -1,7 +1,8 @@
 import React from "react";
 import cornPix from "@assets/images/products/corn.png";
 import Image from "next/image";
-import imagePix from "@assets/images/products/image.png";
+import imagePix from "@assets/images/products/Image.png";
+import Link from "next/link";
 const products = () => {
   return (
     <div>
@@ -193,338 +194,338 @@ const products = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:py-5 mb-10">
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              </Link>
+              <Link passHref href="/">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
-              </a>
+              </Link>
               <div className="font-bold text-lg">₦5000.00</div>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              <Link passHref href="/">
                 <div className="rounded border border-jp-purple-100 py-4 mt-4 text-jp-purple-100 hover:text-white hover:bg-jp-purple-100 duration-200 transition-all text-center">
                   Buy Now
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              </Link>
+              <Link passHref href="/">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
-              </a>
+              </Link>
               <div className="font-bold text-lg">₦5000.00</div>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              <Link passHref href="/">
                 <div className="rounded border border-jp-purple-100 py-4 mt-4 text-jp-purple-100 hover:text-white hover:bg-jp-purple-100 duration-200 transition-all text-center">
                   Buy Now
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              </Link>
+              <Link passHref href="/">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
-              </a>
+              </Link>
               <div className="font-bold text-lg">₦5000.00</div>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              <Link passHref href="/">
                 <div className="rounded border border-jp-purple-100 py-4 mt-4 text-jp-purple-100 hover:text-white hover:bg-jp-purple-100 duration-200 transition-all text-center">
                   Buy Now
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              </Link>
+              <Link passHref href="/">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
-              </a>
+              </Link>
               <div className="font-bold text-lg">₦5000.00</div>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              <Link passHref href="/">
                 <div className="rounded border border-jp-purple-100 py-4 mt-4 text-jp-purple-100 hover:text-white hover:bg-jp-purple-100 duration-200 transition-all text-center">
                   Buy Now
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              </Link>
+              <Link passHref href="/">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
-              </a>
+              </Link>
               <div className="font-bold text-lg">₦5000.00</div>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              <Link passHref href="/">
                 <div className="rounded border border-jp-purple-100 py-4 mt-4 text-jp-purple-100 hover:text-white hover:bg-jp-purple-100 duration-200 transition-all text-center">
                   Buy Now
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              </Link>
+              <Link passHref href="/">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
-              </a>
+              </Link>
               <div className="font-bold text-lg">₦5000.00</div>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              <Link passHref href="/">
                 <div className="rounded border border-jp-purple-100 py-4 mt-4 text-jp-purple-100 hover:text-white hover:bg-jp-purple-100 duration-200 transition-all text-center">
                   Buy Now
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              </Link>
+              <Link passHref href="/">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
-              </a>
+              </Link>
               <div className="font-bold text-lg">₦5000.00</div>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              <Link passHref href="/">
                 <div className="rounded border border-jp-purple-100 py-4 mt-4 text-jp-purple-100 hover:text-white hover:bg-jp-purple-100 duration-200 transition-all text-center">
                   Buy Now
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              </Link>
+              <Link passHref href="/">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
-              </a>
+              </Link>
               <div className="font-bold text-lg">₦5000.00</div>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              <Link passHref href="/">
                 <div className="rounded border border-jp-purple-100 py-4 mt-4 text-jp-purple-100 hover:text-white hover:bg-jp-purple-100 duration-200 transition-all text-center">
                   Buy Now
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              </Link>
+              <Link passHref href="/">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
-              </a>
+              </Link>
               <div className="font-bold text-lg">₦5000.00</div>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              <Link passHref href="/">
                 <div className="rounded border border-jp-purple-100 py-4 mt-4 text-jp-purple-100 hover:text-white hover:bg-jp-purple-100 duration-200 transition-all text-center">
                   Buy Now
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              </Link>
+              <Link passHref href="/">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
-              </a>
+              </Link>
               <div className="font-bold text-lg">₦5000.00</div>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              <Link passHref href="/">
                 <div className="rounded border border-jp-purple-100 py-4 mt-4 text-jp-purple-100 hover:text-white hover:bg-jp-purple-100 duration-200 transition-all text-center">
                   Buy Now
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              </Link>
+              <Link passHref href="/">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
-              </a>
+              </Link>
               <div className="font-bold text-lg">₦5000.00</div>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              <Link passHref href="/">
                 <div className="rounded border border-jp-purple-100 py-4 mt-4 text-jp-purple-100 hover:text-white hover:bg-jp-purple-100 duration-200 transition-all text-center">
                   Buy Now
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              </Link>
+              <Link passHref href="/">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
-              </a>
+              </Link>
               <div className="font-bold text-lg">₦5000.00</div>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              <Link passHref href="/">
                 <div className="rounded border border-jp-purple-100 py-4 mt-4 text-jp-purple-100 hover:text-white hover:bg-jp-purple-100 duration-200 transition-all text-center">
                   Buy Now
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              </Link>
+              <Link passHref href="/">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
-              </a>
+              </Link>
               <div className="font-bold text-lg">₦5000.00</div>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              <Link passHref href="/">
                 <div className="rounded border border-jp-purple-100 py-4 mt-4 text-jp-purple-100 hover:text-white hover:bg-jp-purple-100 duration-200 transition-all text-center">
                   Buy Now
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              </Link>
+              <Link passHref href="/">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
-              </a>
+              </Link>
               <div className="font-bold text-lg">₦5000.00</div>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              <Link passHref href="/">
                 <div className="rounded border border-jp-purple-100 py-4 mt-4 text-jp-purple-100 hover:text-white hover:bg-jp-purple-100 duration-200 transition-all text-center">
                   Buy Now
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              </Link>
+              <Link passHref href="/">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
-              </a>
+              </Link>
               <div className="font-bold text-lg">₦5000.00</div>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              <Link passHref href="/">
                 <div className="rounded border border-jp-purple-100 py-4 mt-4 text-jp-purple-100 hover:text-white hover:bg-jp-purple-100 duration-200 transition-all text-center">
                   Buy Now
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              </Link>
+              <Link passHref href="/">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
-              </a>
+              </Link>
               <div className="font-bold text-lg">₦5000.00</div>
-              <a href="{{ route('product.show', $topdeal->id) }}">
+              <Link passHref href="/">
                 <div className="rounded border border-jp-purple-100 py-4 mt-4 text-jp-purple-100 hover:text-white hover:bg-jp-purple-100 duration-200 transition-all text-center">
                   Buy Now
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import imagePix from "@assets/images/products/image.png";
+import imagePix from "@assets/images/products/Image.png";
 
 const Header = () => {
   return (

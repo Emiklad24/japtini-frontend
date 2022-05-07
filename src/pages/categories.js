@@ -2,6 +2,7 @@ import React from "react";
 import cornPix from "@assets/images/products/corn.png";
 import Image from "next/image";
 import imagePix from "@assets/images/products/image.png";
+import Link from "next/link";
 
 const categories = () => {
   return (
@@ -284,14 +285,14 @@ const categories = () => {
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
+              </Link>
               <a href="{{ route('product.show', $topdeal->id) ">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
               </a>
@@ -305,14 +306,14 @@ const categories = () => {
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
+              </Link>
               <a href="{{ route('product.show', $topdeal->id) }}">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
               </a>
@@ -326,14 +327,14 @@ const categories = () => {
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
+              </Link>
               <a href="{{ route('product.show', $topdeal->id) }}">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
               </a>
@@ -347,14 +348,14 @@ const categories = () => {
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
+              </Link>
               <a href="{{ route('product.show', $topdeal->id) }}">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
               </a>
@@ -368,14 +369,14 @@ const categories = () => {
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
+              </Link>
               <a href="{{ route('product.show', $topdeal->id) }}">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
               </a>
@@ -389,14 +390,14 @@ const categories = () => {
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
+              </Link>
               <a href="{{ route('product.show', $topdeal->id) }}">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
               </a>
@@ -410,14 +411,14 @@ const categories = () => {
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
+              </Link>
               <a href="{{ route('product.show', $topdeal->id) }}">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
               </a>
@@ -431,14 +432,14 @@ const categories = () => {
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
+              </Link>
               <a href="{{ route('product.show', $topdeal->id) }}">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
               </a>
@@ -452,14 +453,14 @@ const categories = () => {
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
+              </Link>
               <a href="{{ route('product.show', $topdeal->id) }}">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
               </a>
@@ -473,14 +474,14 @@ const categories = () => {
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
+              </Link>
               <a href="{{ route('product.show', $topdeal->id) }}">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
               </a>
@@ -494,14 +495,14 @@ const categories = () => {
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
+              </Link>
               <a href="{{ route('product.show', $topdeal->id) }}">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
               </a>
@@ -515,14 +516,14 @@ const categories = () => {
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
+              </Link>
               <a href="{{ route('product.show', $topdeal->id) }}">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
               </a>
@@ -536,14 +537,14 @@ const categories = () => {
           </div>
           <div>
             <div className="mr-4 h-auto transition p-5 duration-500 ease-in-out hover:bg-white hover:shadow-xl border-half border-jp-gray-finese rounded-lg">
-              <a href="/" className>
+              <Link passHref href="/" className>
                 <div className="product-image h-auto md:h-2/3 w-full">
                   <Image src={cornPix} alt="" className="mx-auto" />
                 </div>
-              </a>
-              <a href className="text-gray-400 font-light">
+              </Link>
+              <Link passHref href="/" className="text-gray-400 font-light">
                 Grain
-              </a>
+              </Link>
               <a href="{{ route('product.show', $topdeal->id) }}">
                 <div className="text-black">Mr Rice (Thai) (50kg)</div>
               </a>
