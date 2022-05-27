@@ -19,10 +19,12 @@
       "@libs/*": ["src/libs/*"],
       "@pages/*": ["src/pages/*"],
       "@styles/*": ["src/styles/*"],
+      "@store/*": ["src/store/*"],
       "@hooks/*": ["src/hooks/*"],
       "@services/*": ["src/services/*"],
       "@config/*": ["src/config/*"],
-      "@assets/*": ["src/assets/*"]
+      "@assets/*": ["src/assets/*"],
+      "@utils/*": ["src/utils/*"]
     }
   }
 }

@@ -1,0 +1,7 @@
+const queryKeys = {
+  GET_CATEGORIES_KEY: "GET_CATEGORIES_KEY",
+  GET_PRODUCTS_KEY: "GET_PRODUCTS_KEY",
+  GET_SINGLE_PRODUCT_KEY: "GET_SINGLE_PRODUCT_KEY",
+};
+
+export default queryKeys;

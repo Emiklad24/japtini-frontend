@@ -1,12 +1,42 @@
 import "@styles/globals.css";
 import PropTypes from "prop-types";
 import { ChakraProvider } from "@chakra-ui/react";
+import { QueryClientProvider } from "react-query";
+import "@styles/globals.css";
+import { Hydrate } from "react-query/hydration";
+import { useQueryClientAndsettings } from "@utils/queryClient";
+import { ReactQueryDevtools } from "react-query/devtools";
+import Router from "next/router";
+import LoadingScreen from "@components/LoadingScreen/LoadingScreen";
+import { useState } from "react";
 
 function MyApp({ Component, pageProps }) {
+  const [isLoading, setIsLoaing] = useState(false);
+  Router.onRouteChangeStart = () => {
+    setIsLoaing(true);
+  };
+
+  Router.onRouteChangeComplete = () => {
+    setIsLoaing(false);
+  };
+
+  Router.onRouteChangeError = () => {
+    setIsLoaing(false);
+  };
+  const { queryClient } = useQueryClientAndsettings();
+
   return (
-    <ChakraProvider>
-      <Component {...pageProps} />
-    </ChakraProvider>
+    <>
+      {isLoading && <LoadingScreen />}
+      <ChakraProvider>
+        <QueryClientProvider client={queryClient}>
+          <Hydrate state={pageProps.dehydratedState}>
+            <Component {...pageProps} />
+          </Hydrate>
+          <ReactQueryDevtools initialIsOpen={false} />
+        </QueryClientProvider>
+      </ChakraProvider>
+    </>
   );
 }
 
