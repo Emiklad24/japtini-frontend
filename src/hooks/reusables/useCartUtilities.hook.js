@@ -13,17 +13,17 @@ export const useCartUtilities = () => {
   );
   const [play] = useSound("/sound.mp3");
 
-  const addToCartHandler = (product, quantity) => {
-    addToCart({ ...product, quantity: quantity || 1 });
+  const addToCartHandler = (product) => {
+    addToCart({ ...product, quantity: 1 });
 
     //check if product is already in cart
-    const currentIndexOfProductIfExists = cart.findIndex(
-      (element) => element.id === product.id
-    );
+    // const currentIndexOfProductIfExists = cart.findIndex(
+    //   (element) => element.id === product.id
+    // );
 
-    if (currentIndexOfProductIfExists === -1) {
-      play();
-    }
+    // if (currentIndexOfProductIfExists === -1) {
+    play();
+    // }
   };
 
   const calculateSubTotal = () => {

@@ -4,7 +4,7 @@ import Layout from "@components/Layout/Layout";
 import ProductCardSimple from "@components/ProductCardSimple/ProductCardSimple";
 import { useCartUtilities } from "@hooks/reusables/useCartUtilities.hook";
 import { useGetSingleProduct } from "@hooks/reusables/useGetSingleProduct.service";
-import { getSingleProducts } from "@services/getSingleProduct.service";
+import { getSingleProduct } from "@services/getSingleProduct.service";
 import queryKeys from "@utils/queryKeys";
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
@@ -142,7 +142,7 @@ const ProductsSlug = () => {
                     >
                       <button
                         className="rounded p-3 text-xs text-white capitalize bg-jp-purple-100 font-medium w-full flex items-center gap-3 justify-center"
-                        onClick={() => addToCartHandler(data, quantity)}
+                        onClick={() => addToCartHandler(data)}
                       >
                         Add to Cart
                         <svg
@@ -1473,7 +1473,7 @@ export async function getServerSideProps(ctx) {
 
   await queryClient.prefetchQuery({
     queryKey: [GET_SINGLE_PRODUCT_KEY, productSlug],
-    queryFn: getSingleProducts,
+    queryFn: getSingleProduct,
   });
 
   return {

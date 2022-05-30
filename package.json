@@ -10,6 +10,12 @@
     "lint:fix": "eslint --fix",
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn lint:fix && yarn format && yarn build && git add -A ."
+    }
+  },
   "lint-staged": {
     "*.+(js|jsx)": "eslint --fix",
     "*.+(json|css|md)": "prettier --write"

@@ -11,17 +11,17 @@ import LoadingScreen from "@components/LoadingScreen/LoadingScreen";
 import { useState } from "react";
 
 function MyApp({ Component, pageProps }) {
-  const [isLoading, setIsLoaing] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   Router.onRouteChangeStart = () => {
-    setIsLoaing(true);
+    setIsLoading(true);
   };
 
   Router.onRouteChangeComplete = () => {
-    setIsLoaing(false);
+    setIsLoading(false);
   };
 
   Router.onRouteChangeError = () => {
-    setIsLoaing(false);
+    setIsLoading(false);
   };
   const { queryClient } = useQueryClientAndsettings();
 

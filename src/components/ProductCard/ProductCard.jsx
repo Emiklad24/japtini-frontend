@@ -1,11 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import PropTypes from "prop-types";
-// import { useCartUtilities } from "@hooks/reusables/useCartUtilities.hook";
 
 const ProductCard = ({ product }) => {
-  // const { addToCartHandler } = useCartUtilities();
-
   return (
     <Link href={`/products/${product.slug}`} passHref>
       <div className="w-full flex flex-row items-center justify-between border-t py-4">
