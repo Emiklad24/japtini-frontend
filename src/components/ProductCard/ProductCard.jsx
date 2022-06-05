@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const ProductCard = ({ product }) => {
   return (
     <Link href={`/products/${product.slug}`} passHref>
-      <div className="w-full flex flex-row items-center justify-between border-t py-4">
+      <div className="w-full flex flex-row items-center justify-between border-t py-4 cursor-pointer">
         <div className="mr-4 h-auto transition p-4 duration-500 ease-in-out hover:bg-giftshop-white hover:shadow-xl border-2 border-jp-gray-min rounded-lg ">
           <div className="product-image h-auto md:h-2/3 bg-jp-gray-light w-full ">
             <img

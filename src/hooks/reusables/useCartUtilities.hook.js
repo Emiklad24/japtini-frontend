@@ -14,8 +14,7 @@ export const useCartUtilities = () => {
   const [play] = useSound("/sound.mp3");
 
   const addToCartHandler = (product) => {
-    addToCart({ ...product, quantity: 1 });
-
+    addToCart({ ...product });
     play();
   };
 

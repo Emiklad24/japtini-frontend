@@ -1,6 +1,6 @@
 import { useQuery } from "react-query";
 import queryKeys from "@utils/queryKeys";
-import { getAllProductsService } from "@services/getAllProducts.service";
+import { getAllProducts } from "@services/getAllProducts.service";
 import { useRouter } from "next/router";
 
 export const useGetProducts = (customPage) => {
@@ -8,7 +8,7 @@ export const useGetProducts = (customPage) => {
   const page = String(customPage || 1) || String(query?.page || 1);
   const { GET_PRODUCTS_KEY } = queryKeys;
   const { data, isLoading, error, isFetching } = useQuery({
-    queryFn: getAllProductsService,
+    queryFn: getAllProducts,
     queryKey: [GET_PRODUCTS_KEY, page],
   });
 

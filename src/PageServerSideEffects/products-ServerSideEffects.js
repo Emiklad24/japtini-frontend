@@ -1,6 +1,6 @@
 import { dehydrate, QueryClient } from "react-query";
 import queryKeys from "@utils/queryKeys";
-import { getAllProductsService } from "@services/getAllProducts.service";
+import { getAllProducts } from "@services/getAllProducts.service";
 
 export const productsServerSideEffect = async (page) => {
   const queryClient = new QueryClient();
@@ -8,7 +8,7 @@ export const productsServerSideEffect = async (page) => {
 
   await queryClient.prefetchQuery(
     [GET_PRODUCTS_KEY, String(page || 1)],
-    getAllProductsService
+    getAllProducts
   );
   const dehydratedState = dehydrate(queryClient);
 

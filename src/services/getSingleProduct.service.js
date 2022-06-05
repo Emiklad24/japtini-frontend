@@ -5,7 +5,7 @@ import { publicInstanceAxios } from "@utils/axiosInstance";
  * @returns { Array }
  */
 export const getSingleProduct = async (context) => {
-  const slug = context.queryKey?.[1] || "";
+  const slug = context?.queryKey?.[1] || "";
   const res = await publicInstanceAxios.get(`/products/${slug}`);
 
   return res?.data?.data;
