@@ -19,7 +19,7 @@ const Pagination = ({ meta }) => {
           onPageChange={(e) => handleChangePage(e)}
           pageRangeDisplayed={5}
           marginPagesDisplayed={2}
-          pageCount={Math.ceil(1600 / meta.per_page)}
+          pageCount={Math.ceil(meta.total / meta.per_page)}
           previousLabel="Previous"
           renderOnZeroPageCount={null}
           containerClassName="flex gap-4 text-xs text-gray-400 items-center justify-center"
