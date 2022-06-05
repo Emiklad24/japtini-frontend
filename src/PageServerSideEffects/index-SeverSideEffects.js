@@ -7,7 +7,10 @@ export const indexServerSideEffect = async () => {
   const queryClient = new QueryClient();
   const { GET_CATEGORIES_KEY, GET_PRODUCTS_KEY } = queryKeys;
   await queryClient.prefetchQuery(GET_CATEGORIES_KEY, getCategoriesService);
-  await queryClient.prefetchQuery(GET_PRODUCTS_KEY, getAllProductsService);
+  await queryClient.prefetchQuery(
+    [GET_PRODUCTS_KEY, "1"],
+    getAllProductsService
+  );
   const dehydratedState = dehydrate(queryClient);
 
   return Promise.resolve(dehydratedState);

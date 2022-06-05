@@ -4,11 +4,10 @@ import ProductCard from "@components/ProductCard/ProductCard";
 import { AnimatePresence, motion } from "framer-motion";
 
 const FeaturedProductsBanner = () => {
-  const {
-    data: { data },
-  } = useGetProducts();
+  const { data } = useGetProducts();
 
-  const featuredProducts = data.filter((product) => product.featured === 1);
+  const featuredProducts =
+    data?.data?.filter((product) => product.featured === 1) || [];
 
   return (
     <div className="bg-giftshop-white pt-10 max-w-6xl mt-0 md:mt-15 mx-auto px-10 md:px-0">

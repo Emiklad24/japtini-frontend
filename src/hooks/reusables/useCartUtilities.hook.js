@@ -16,14 +16,7 @@ export const useCartUtilities = () => {
   const addToCartHandler = (product) => {
     addToCart({ ...product, quantity: 1 });
 
-    //check if product is already in cart
-    // const currentIndexOfProductIfExists = cart.findIndex(
-    //   (element) => element.id === product.id
-    // );
-
-    // if (currentIndexOfProductIfExists === -1) {
     play();
-    // }
   };
 
   const calculateSubTotal = () => {

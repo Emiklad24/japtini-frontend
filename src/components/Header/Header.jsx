@@ -4,6 +4,7 @@ import Image from "next/image";
 import imagePix from "@assets/images/products/Image.png";
 import Link from "next/link";
 import { useCartUtilities } from "@hooks/reusables/useCartUtilities.hook";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const { cart } = useCartUtilities();
@@ -105,9 +106,11 @@ const Header = () => {
                   </svg>
 
                   {cart.length !== 0 && (
-                    <span className="relative w-5 h-5 rounded-full bg-red-700 text-white -top-2 -right-2 text-sm font-sans flex align-center justify-center">
-                      <span> {cart.length}</span>
-                    </span>
+                    <motion.div>
+                      <span className="relative w-5 h-5 rounded-full bg-red-700 text-white -top-2 -right-2 text-sm font-sans flex align-center justify-center">
+                        <span> {cart.length}</span>
+                      </span>
+                    </motion.div>
                   )}
                 </button>
               </Link>

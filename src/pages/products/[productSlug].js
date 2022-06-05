@@ -14,6 +14,7 @@ const ProductsSlug = () => {
   const { data } = useGetSingleProduct();
   const [quantity, setQuantity] = useState(1);
   const { addToCartHandler } = useCartUtilities();
+
   return (
     <Layout>
       <>
